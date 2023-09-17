@@ -1,0 +1,10 @@
+.avatar {
+  border-radius: 5px;
+  width: 70px;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 200px;
+  }
+}

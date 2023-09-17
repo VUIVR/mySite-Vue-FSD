@@ -1,0 +1,10 @@
+.footer {
+  &_max-width {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+
+.el-divider--horizontal {
+  margin: 5px 0 !important;
+}

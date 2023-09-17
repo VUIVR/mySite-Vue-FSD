@@ -1,0 +1,5 @@
+.toggle {
+  --el-switch-on-color: var(--color-black) !important;
+  --el-switch-off-color: var(--color-black) !important;
+  --el-switch-border-color: var(--color-red) !important;
+}

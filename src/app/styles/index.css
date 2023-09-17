@@ -1,0 +1,7 @@
+@import "element-plus/dist/index.css";
+@import "./normalize.css";
+@import "./main.css";
+@import "./fonts.css";
+@import "./vars-light-theme.css";
+@import "./vars-black-theme.css";
+@import "./vars.css";

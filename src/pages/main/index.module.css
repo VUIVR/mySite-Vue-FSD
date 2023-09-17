@@ -1,0 +1,5 @@
+.card {
+  &_margin-bottom {
+    margin-bottom: 30px;
+  }
+}

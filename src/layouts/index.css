@@ -1,0 +1,43 @@
+[id="app"] {
+  display: grid;
+  flex-grow: 1;
+  grid-template-areas:
+    "h"
+    "m"
+    "f";
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+header {
+  grid-area: h;
+}
+
+aside {
+  grid-area: a;
+}
+
+main {
+  grid-area: m;
+}
+
+footer {
+  grid-area: f;
+}
+
+.el-main {
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+@media (min-width: 768px) {
+  [id="app"] {
+    grid-template-areas:
+      "h m"
+      "a m"
+      "f m";
+    grid-template-columns: 300px 1fr;
+    width: 100%;
+  }
+}

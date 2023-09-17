@@ -1,0 +1,43 @@
+.project {
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  &_textalign-j {
+    text-align: justify;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__ul li {
+    list-style: disc;
+  }
+
+  &__second-col {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    flex-direction: row-reverse;
+
+    &__desc {
+      padding: 0 10px 15px 15px;
+    }
+
+    &__second-col {
+      padding-top: 0;
+    }
+  }
+}

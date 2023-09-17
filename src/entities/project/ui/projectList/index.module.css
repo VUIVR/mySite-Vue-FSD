@@ -1,0 +1,24 @@
+.projects-list {
+  &__is-empty {
+    text-align: center;
+  }
+
+  &__firth-col {
+    padding-right: 0;
+  }
+  &__second-col {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-list {
+    &__firth-col {
+      padding-right: 15px;
+    }
+
+    &__second-col {
+      padding-left: 15px;
+    }
+  }
+}

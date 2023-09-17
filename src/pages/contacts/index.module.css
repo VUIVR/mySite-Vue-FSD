@@ -1,0 +1,19 @@
+.contacts {
+  &__gallary {
+    margin: 0 auto;
+    padding-top: 20px;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    &__gallary {
+      padding-top: 0;
+    }
+
+    &__firth-col {
+      padding-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.project-card {
+  height: fit-content;
+
+  &__container {
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__name {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: var(--color-white);
+    transition: all 0.25s linear 1s;
+  }
+
+  &__plus:hover &__name {
+    bottom: 20px;
+    transition: all 0.5s linear 0s;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    cursor: pointer;
+
+    &__plus {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 5px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(7 7 7 / 9%);
+      opacity: 0;
+      transition: all 0.25s linear 0s;
+    }
+
+    &__plus:hover {
+      opacity: 1;
+      transition: all 0.25s linear 0s;
+    }
+
+    /* знак плюса */
+    &__name {
+      bottom: 0;
+    }
+
+    &__plus::after {
+      transform: rotate(90deg);
+    }
+
+    &__plus::before,
+    &__plus::after {
+      content: "";
+      position: absolute;
+      border: 1px solid var(--color-white);
+      border-radius: 5px;
+      width: 40px;
+      box-sizing: border-box;
+    }
+  }
+}

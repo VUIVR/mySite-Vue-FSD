@@ -1,0 +1,33 @@
+.about {
+  text-align: center;
+
+  &__download {
+    padding: 10px 0;
+  }
+
+  &_textalign-justify {
+    text-align: justify;
+  }
+
+  &_mt {
+    margin-top: 0;
+  }
+
+  &__gallary {
+    margin: 0 auto;
+    padding-top: 15px;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    &__firth-col {
+      padding-right: 15px;
+    }
+
+    &__gallary {
+      padding-top: 0;
+    }
+  }
+}
