@@ -12,10 +12,9 @@
 </template>
 
 <script setup lang="ts">
-import { type PropType } from 'vue';
-import { type TProject } from '@/shared/data-base';
-import { useRouter } from 'vue-router';
-import $style from './index.module.css'
+import { type PropType } from "vue";
+import { type TProject } from "@/shared/data-base";
+import { useRouter } from "vue-router";
 const route = useRouter();
 
 const props = defineProps({
@@ -30,3 +29,6 @@ const props = defineProps({
 });
 </script>
 
+<style module>
+@import "./index.module.css";
+</style>

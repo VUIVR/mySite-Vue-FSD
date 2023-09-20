@@ -15,7 +15,6 @@
 <script setup lang="ts">
 import { type PropType } from '@vue/runtime-core';
 import { type TGallary } from '@/shared/data-base'
-import $style from './index.module.css';
 
 const props = defineProps({
   gallary: {
@@ -36,3 +35,7 @@ const props = defineProps({
   },
 });
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

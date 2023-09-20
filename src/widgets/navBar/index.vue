@@ -9,8 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import $style from "./index.module.css";
-
 const props = defineProps({
   withBurger: {
     type: Boolean,
@@ -24,3 +22,7 @@ function closeBurger() {
   if (props.withBurger) emits("closeBurger");
 }
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

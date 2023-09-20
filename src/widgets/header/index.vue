@@ -24,7 +24,6 @@
 
 <script setup lang="ts">
 import "element-plus/theme-chalk/display.css";
-import $style from "./index.module.css";
 import { NavBar } from "@/widgets/navBar";
 import { Burger, Logo, Avatar } from "@/shared/ui";
 
@@ -32,3 +31,7 @@ import { ref } from "vue";
 
 const isCloseBurger = ref(false);
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

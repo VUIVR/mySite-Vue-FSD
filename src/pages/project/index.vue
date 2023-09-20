@@ -48,8 +48,6 @@ import { computed, defineProps } from "vue";
 import { useHead } from "@unhead/vue";
 import { dataProjects, type TProject } from "@/shared/data-base";
 
-import $style from "./index.module.css";
-
 const props = defineProps({
   id: {
     type: String,
@@ -64,3 +62,7 @@ useHead({
   meta: [{ name: "description", content: project.value.name }],
 });
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

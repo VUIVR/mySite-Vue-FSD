@@ -3,9 +3,6 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
-// postCSS
-import autoprefixer from "autoprefixer";
-
 // Element Plus
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";

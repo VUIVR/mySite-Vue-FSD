@@ -4,6 +4,6 @@
   </el-row>
 </template>
 
-<script setup lang="ts">
-import $style from './index.module.css'
-</script>
+<style module>
+@import "./index.module.css";
+</style>

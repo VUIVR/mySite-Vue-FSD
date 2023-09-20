@@ -13,5 +13,8 @@
 
 <script lang="ts" setup>
 import { ToggleTheme } from "@/entities/toggleTheme";
-import $style from "./index.module.css";
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

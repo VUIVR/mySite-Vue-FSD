@@ -22,10 +22,12 @@ import { ProjectList, ProjectCard } from "@/entities/project";
 import { Divider } from "@/shared/ui";
 import { dataProjects, type TProject } from "@/shared/data-base";
 
-import $style from "./index.module.css";
-
 useHead({
   title: "Проекты Островского А.",
   meta: [{ name: "description", content: "Проекты Островского А." }],
 });
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

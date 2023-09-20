@@ -12,7 +12,6 @@
 <script setup lang="ts">
 import { onMounted, ref, watch } from 'vue';
 import { Sunny, Moon } from '@element-plus/icons-vue';
-import $style from './index.module.css'
 
 const isLightTheme = ref(true);
 
@@ -38,3 +37,6 @@ watch(isLightTheme, (newV, oldV) => {
 });
 </script>
 
+<style module>
+@import "./index.module.css";
+</style>

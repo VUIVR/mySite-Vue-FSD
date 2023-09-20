@@ -21,6 +21,6 @@ import { ScrollBar } from "@/shared/ui";
 import { Header, Footer, NavBar } from "@/widgets";
 </script>
 
-<style>
-@import "./index.css";
+<style module>
+@import "./index.module.css";
 </style>

@@ -59,10 +59,13 @@ import { DefaultLayout } from "@/layouts";
 import { useHead } from "@unhead/vue";
 import { dataGallary, dataAbout } from "@/shared/data-base";
 import { Divider, Gallary } from "@/shared/ui";
-import $style from "./index.module.css";
 
 useHead({
   title: "Обо мне",
   meta: [{ name: "description", content: "Обо мне" }],
 });
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

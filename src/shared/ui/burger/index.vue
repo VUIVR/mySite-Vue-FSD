@@ -5,8 +5,6 @@
 </template>
 
 <script setup lang="ts">
-import $style from './index.module.css';
-
 const props = defineProps({
   modelValue: {
     type: Boolean,
@@ -20,3 +18,7 @@ function toggleBurger() {
   emits('update:modelValue', !props.modelValue);
 }
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>

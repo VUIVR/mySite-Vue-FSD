@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -40,6 +40,7 @@
     "postcss": "^8.4.29",
     "postcss-nested": "^6.0.1",
     "postcss-sorting": "^8.0.2",
+    "ts-jest": "^29.1.1",
     "typescript": "~5.1.6",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.2",

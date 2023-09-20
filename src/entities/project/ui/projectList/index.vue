@@ -11,9 +11,8 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, computed, type PropType } from 'vue';
-import { type TProject } from '@/shared/data-base';
-import $style from './index.module.css'
+import { defineProps, computed, type PropType } from "vue";
+import { type TProject } from "@/shared/data-base";
 
 const props = defineProps({
   projects: {
@@ -41,3 +40,6 @@ const secondColumProjects = computed<TProject[]>(() => {
 });
 </script>
 
+<style module>
+@import "./index.module.css";
+</style>

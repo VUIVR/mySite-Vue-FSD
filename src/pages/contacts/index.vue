@@ -37,10 +37,12 @@ import { useHead } from "@unhead/vue";
 import { Divider, Gallary } from "@/shared/ui";
 import { dataContacts, dataGallary } from "@/shared/data-base";
 
-import $style from "./index.module.css";
-
 useHead({
   title: "Контакты",
   meta: [{ name: "description", content: "Контакты" }],
 });
 </script>
+
+<style module>
+@import "./index.module.css";
+</style>
