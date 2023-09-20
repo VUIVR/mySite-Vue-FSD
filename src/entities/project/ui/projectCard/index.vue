@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style['project-card']" @click="link && route.push('/project/' + project.id)">
+  <div :class="$style['project-card']" @click="link && route.push({ name: 'project', params: { id: project.id } })">
     <div :class="$style['project-card__container']">
       <div :class="$style['project-card__image']">
         <img :src="project.mainImg" :alt="project.alt" />
